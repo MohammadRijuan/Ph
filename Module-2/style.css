@@ -1,0 +1,13 @@
+.header{
+    background-image: url('hotel1.jpg');
+    text-align: center;
+    background-position: cover;
+    background-size: cover;
+    padding: 10px;
+}
+p{
+    background-color: antiquewhite;
+    border: red;
+    margin: 10px;
+
+}
