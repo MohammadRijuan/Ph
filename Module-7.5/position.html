@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dummy{
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+        }
+        .box{
+            border: 2px dotted ;
+            width: 600px;
+        }
+        /* .box2{
+            position: relative;
+            top: 120px;
+            left: 50px;
+        } */
+
+        /* .box2{
+            position: absolute;
+            top: 30px;
+            left: 60px;
+        } */
+
+        /* .box2{
+            position: sticky;
+            top: 20px;
+            left: 20px;
+            
+        } */
+
+        /* .box2{
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        } */
+
+
+    </style>
+</head>
+<body>
+
+    <h3>1.static : <small>it will not move</small></h3>
+    <h3>2.relative : <small>it will not replace or lose its position but it will move according to instruction</small></h3>
+    <h3>3.absolute : <small>it will lost its current position</small></h3>
+
+    <!--use for scrolling -->
+    <h3>4.fixed : <small>it will fixed its even if we scroll the website</small></h3>
+    <h3>5.sticky : <small>same as before</small></h3>
+    
+
+
+    <div class="abc-container">
+        <div class="box box1">
+            <img src="./cancer.jpg" alt="">
+        </div>
+        <div class="box box2">
+            <img src="./help.jpg" alt="">
+        </div>
+        <div class="box box3">
+            <img src="./platelate.jpg" alt="">
+        </div>
+
+
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </div>
+</body>
+</html>

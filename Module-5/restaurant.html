@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            background: linear-gradient(0deg, rgb(9, 9, 9) 2.884%,rgba(16, 16, 16, 0) 101.034%),url('./make-essential-UI-components-Resources/assets/hero-bg.png');            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            align-items: center;
+        }
+        .main-content{
+            position: absolute;
+            height: 600px;
+            /* width: 1000px; */
+            left: 60px;
+            top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            padding: 0px;
+            /* flex-wrap: wrap; */
+
+
+            
+        }
+        .sub-title{
+            color: aliceblue;
+        }
+        .title{
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+        .des{
+            color: aliceblue;
+        }
+        .btn{
+            border-radius: 8px;
+            background: rgb(82, 195, 3);
+            gap: 10;
+            padding: 11px 21px 11px 21px;
+            color: aliceblue;
+            font-size: Bold;
+            font-size: 20px;
+        }
+        .brand{
+            
+        }
+        .sub-title-1{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .title-1{
+            text-align: center;
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            width: 90%;
+            max-width: 1500px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+            /* padding: 20px; */
+            text-align: center;
+            /* flex: 1 1 calc(33.333% - 40px);
+            Adjust card width */
+            max-width: 300px;
+           
+        }
+        
+        .imag{
+            width: 300px;
+        }
+        .piz{
+            background-color: yellowgreen;
+            width: 80px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px 2px;
+            margin-bottom: 10px;
+            margin-left: 110px;  
+            margin-top: 10px;   
+
+        }
+        .titles-1{
+            margin-bottom: 10px;
+        }
+
+        .banner-2{
+            margin-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .image{
+            width: 650px;
+            height: 300px;
+        }
+
+        .banner-body{
+            text-align: center;
+            justify-content: space-around;
+            margin-top: 120px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="content">
+        <div class="main-content">
+            <p class="sub-title">Savor The Flavors</p>
+            <h2 class="title">Experience Culinary Excellence Food Experience</h2>
+            <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus illo reiciendis quia odio assumenda dolores porro excepturi, ullam repudiandae.</p>
+            <button class="btn">Shop The Hottest Food</button>
+        </div>
+    </section>
+    <section>
+        <div class="brand">
+            <p class="sub-title-1">Favourite Brands</p>
+            <h2 class="title-1">Your Favourite Brands Are Now On SAle</h2>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="card">
+            <img class="imag" src="./make-essential-UI-components-Resources/assets/pizza.png" alt="">
+            <div class="card-body">
+            <h5 class="piz">Pizza Burg</h5>
+            <h3 class="titles-1">Up To 50% Off</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur</p>
+        </div>
+        </div>
+
+        <div class="card">
+            <img class="imag" src="./make-essential-UI-components-Resources/assets/burger.png" alt="">
+            <div class="card-body">
+            <h5 class="piz">Pizza Burg</h5>
+            <h3 class="titles-1">Up To 50% Off</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur</p>
+        </div>
+        </div>
+
+        <div class="card">
+            <img class="imag" src="./make-essential-UI-components-Resources/assets/biriyani.png" alt="">
+            <div class="card-body">
+            <h5 class="piz">Pizza Burg</h5>
+            <h3 class="titles-1">Up To 50% Off</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur</p>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="banner-2">
+        <img class="image" src="./make-essential-UI-components-Resources/assets/social-bg.png" alt="">
+        <div class="banner-body">
+            <h3>We always make sure to provide you with good food</h3>
+            <p>Dont miss a thing to subscribe our newsletter</p>
+            <hr>
+            <h4>Follow Us On</h4>
+            <hr>
+            <ul class="social">
+                <li>fb</li>
+                <li>yt</li>
+                <li>insta</li>
+                <li>snap</li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>

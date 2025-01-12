@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            position: relative;
+        }
+        .box1{
+            /* plus e thakle box1 upore thakbe box2 er...minus dile box2 er niche asbe... */
+            /* overlap ta bujar jonno top diye postion change kore deke nilam */
+            z-index: 1;
+        }
+        .box2{
+            top: -70px;
+        }
+        .box3{
+            top: -120px;
+
+            /* minus dile box2 er niche thakbe */
+            z-index: -2; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Z axis</h1>
+    <div class="b-container">
+        <div class="box box1">
+            <img src="./cancer.jpg" alt="">
+        </div>
+        <div class="box box2">
+            <img src="./help.jpg" alt="">
+        </div>
+        <div class="box box3">
+            <img src="./platelate.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
