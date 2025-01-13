@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        .left{
+           
+            /* border: 1px solid black; */
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+        }
+        
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid purple;
+            height: 90vh;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            /* justify content kaj hbena karon atar fixed width jurey ase..jar karone norte parbena..border diye bujano hyece */
+            /* oi form ta ke aladha div e niye center korte hbe */
+            justify-content: center;
+            border: 1px solid red;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="">home</a>
+        <a href="">profile</a>
+        <a href="">contact</a>
+        <a href="">blogg</a>
+        </div>
+        <a href="">login</a>
+    </nav>
+
+    <section class="form-container">
+        <h3>login form</h3>
+        <form action="" class="forms">
+            <input type="email" required placeholder="enter email">
+            <input type="password" required placeholder="password">
+            <button>Submit</button>
+        </form>
+    </section>
+    
+    
+</body>
+</html>
