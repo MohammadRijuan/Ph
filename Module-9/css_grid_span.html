@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Adjusted column width */
+            gap: 20px;
+            border-radius: 5px;
+            grid-template-rows: repeat(3, 200px) 50px 50px;
+        }
+        .box {
+            background-color: aqua;
+            text-align: center;
+            line-height: 50px; /* Center text vertically */
+            border: 1px solid black;
+        }
+
+        /* Span box-1 across multiple rows */
+        #box-1 {
+            grid-row: span 5;
+        }
+
+        /* Span box-11 and box-12 across multiple columns */
+        #box-11, #box-12 {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box - 1</div>
+        <div class="box">box - 2</div>
+        <div class="box">box - 3</div>
+        <div class="box">box - 4</div>
+        <div class="box">box - 5</div>
+        <div class="box">box - 6</div>
+        <div class="box">box - 7</div>
+        <div class="box">box - 8</div>
+        <div class="box">box - 9</div>
+        <div class="box">box - 10</div>
+        <div class="box" id="box-11">box - 11</div>
+        <div class="box" id="box-12">box - 12</div>
+    </div>
+</body>
+</html>

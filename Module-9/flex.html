@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 1 way of doing responsive */
+        .container{
+            display: flex;
+            gap: 20px;
+            /* flex-wrap: wrap; */
+        }
+        .box{
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+
+        /* another way of doing responsive */
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+        }
+        .item{
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            background-color: violet;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width:576px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex box</h1>
+
+    <div class="container">
+        <div class="box">
+            <h3>abc</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto non, in ipsum ipsam tempore natus accusantium, corrupti repellat blanditiis esse aliquam. Quisquam, illo ipsa sequi dicta modi nostrum. Dolor.</p>
+        </div>
+        <div class="box">
+            <h3>bcd</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo perspiciatis nisi officiis, provident, quis delectus corporis dolor doloribus libero itaque molestiae molestias ipsum maiores earum atque aspernatur, sapiente commodi error?</p>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+        <div class="item">
+        <h3>abc</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laboriosam pariatur cumque veniam maiores, aperiam repellat totam molestias, sequi qui dolore iste a autem nisi earum itaque cum rerum quisquam!</p>
+        </div>
+    </div>
+    
+</body>
+</html>

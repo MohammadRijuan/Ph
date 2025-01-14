@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area layout</title>
+
+    <style>
+        .header, .nav, .main, .advertise, .sidebar, footer{
+            background-color: bisque;
+            border: 1px solid black;
+        }
+
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .main{
+            grid-area: main;
+        }
+        .advertise{
+            grid-area: advertise;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header  header  header  header"
+            "nav     main    main    sidebar"
+            "nav     main    main    advertise"
+            "footer  footer  footer  footer";
+            gap: 20px;
+        }
+
+
+        @media screen and (max-width:576px){
+            .container{
+                display: grid;
+            grid-template-areas: 
+            "header"
+            "nav"  
+            "main"
+            "sidebar"
+            "advertise"
+            "footer";
+            gap: 20px;
+
+            };
+            
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h1>Grid area layout</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="">nav</a></li>
+            <li><a href="">nav</a></li>
+            <li><a href="">nav</a></li>
+        </ul>
+    </nav>    
+
+    <main class="main">
+        <div>
+            <h3>main 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae, optio pariatur quas deserunt fugiat corrupti qui ratione libero eaque?</p>
+        </div>
+        <div>
+            <h3>main 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus recusandae, optio pariatur quas deserunt fugiat corrupti qui ratione libero eaque?</p>
+        </div>
+    </main>
+
+    <aside>
+        <div class="advertise">advertise</div>
+        <div class="sidebar">sidebar</div>
+    </aside>
+
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</html>

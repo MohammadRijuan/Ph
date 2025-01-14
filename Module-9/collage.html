@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1st part */
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .row{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+    
+        }
+
+        /* 2nd part */
+
+        .row > div{
+            /* sobgulor size soman howar jnno */
+            flex: 1;
+        }
+
+        .vertical-collage{
+            height: 50%;
+        }
+
+        /* 3rd part */
+
+        .four-collage{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 5px;
+
+        }
+        
+        
+        /* smaller device */
+        @media only screen and (max-width:576px) {
+            .row{
+                flex-direction: column;
+                /* to fix the height overlap */
+                height: auto;
+            }
+
+            .four-collage{
+                grid-template-columns: 1fr;
+            }            
+        }
+
+        /* larger device */
+        @media screen and (min-width:576px) and (max-width:992px){
+            .row{
+                flex-direction: column;
+                height: auto;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>picture collage</h1>
+    
+    <main>
+        <section>
+            <!-- 1st -->
+            <div class="row">
+                <img src="./hotel1.jpg" alt="">
+            </div>
+            
+            <!-- 2nd -->
+            <div class="row">
+                <div>
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+                <div class="vertical-collage">
+                    <img src="./hotel1.jpg" alt="">
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+            </div>
+            
+
+            <!-- 3rd -->
+            <div class="row">
+                <div>
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+                <div class="four-collage">
+                    <img src="./hotel1.jpg" alt="">
+                    <img src="./hotel1.jpg" alt="">
+                    <img src="./hotel1.jpg" alt="">
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./hotel1.jpg" alt="">
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+    
+</body>
+</html>
