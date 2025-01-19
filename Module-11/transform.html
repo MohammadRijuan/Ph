@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+            width: 400px;
+        }
+        .box{
+            border: 2px black solid;
+            background-color: blanchedalmond;
+            /* to set duration we will use transition */
+            transition: transform 0.4s ease;
+            border-radius: 5px;
+        }
+        .box:hover{
+            /* width: 600px; */
+            /* transform: scale(0.25,0.5); */
+            transform: rotate(18deg) scale(1.2) translate(10px, 10px);
+            transform: scale(1.2) translate(10px, 10px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>header</h1>
+        <div class="box">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita nam voluptatem autem possimus unde soluta aut earum facilis ea temporibus vel fugit magnam quae sit, modi dolore a animi dolorum repudiandae? Aperiam nesciunt aut doloribus rem perspiciatis, neque eligendi ullam ad architecto debitis omnis ipsa. Dolore veritatis veniam sunt!</p>
+        </div>
+        <div class="box">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita nam voluptatem autem possimus unde soluta aut earum facilis ea temporibus vel fugit magnam quae sit, modi dolore a animi dolorum repudiandae? Aperiam nesciunt aut doloribus rem perspiciatis, neque eligendi ullam ad architecto debitis omnis ipsa. Dolore veritatis veniam sunt!</p>
+        </div>
+        <div class="box">
+            <h3>box-3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, expedita nam voluptatem autem possimus unde soluta aut earum facilis ea temporibus vel fugit magnam quae sit, modi dolore a animi dolorum repudiandae? Aperiam nesciunt aut doloribus rem perspiciatis, neque eligendi ullam ad architecto debitis omnis ipsa. Dolore veritatis veniam sunt!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
