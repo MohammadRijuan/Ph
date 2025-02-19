@@ -28,3 +28,27 @@ console.log(date.getMonth())
 const specificDate = new Date(2021,10,12)
 console.log(specificDate)
 specificDate.setMonth(9)
+
+
+
+
+
+
+
+
+// tallest guy
+
+const heights=[60,68,72,78,82,56,62]
+
+function getTaller(numbers){
+    let max = numbers[0]
+    for (const num of numbers){
+        if(num > max){
+            max = num;
+        }
+    }
+    return max;
+}
+
+const tallest = getTaller(heights)
+console.log(tallest)
