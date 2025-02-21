@@ -1,19 +1,36 @@
 function  validEmail( email ) {
-    if(typeof email != 'string' || Array.isArray(email)){
+    if(Array.isArray(email) || typeof email !='string'){
         return "Invalid";
     }
 
-    if(email.endsWith('.com') &&  email.includes('@') && typeof email === 'string'){
+    if(email.includes('@') && email.endsWith('.com')){
         return true;
     }
-    else if(email.includes(' ') && email.startsWith('.-_+@')){
-        return false
-    }
-    else
-    {
+    
+    // for (let i = 0; i < email.length; i++) {
+    //     if (email[i] === ' ') {
+    //         return false;
+    //     }
+    // }
+    // if(email.startsWith('.-_+@') || email.includes(' ')){
+    //     return false;
+    // }
+
+    let char = email[0];
+    if (char === '.' || char === '-' || char === '_' || char === '+' || char === '@') {
         return false;
     }
 
+    for (let i = 0; i < email.length; i++) {
+        if (email[i] === " ") {
+            return false;
+        }
+    }
+
+    // let space = email.split(" ");
+    // if (space.length > 0) {
+    //     return false; 
+    // }
 }
 
 console.log(validEmail("ferdous@gmail.com"))
