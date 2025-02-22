@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dom.css">
+    <style>
+        h1{
+        color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my DOM</h1>
+
+    <ul>
+        <li>sdafc</li>
+        <li>dfvsdfv</li>
+        <li>dsfgv</li>
+        <li>sdcxsc</li>
+        <li>b fgbf</li>
+    </ul>
+
+    <section >
+        <h1 id="fruits">Favourites fruits</h1>
+        <ul>
+            <li>Banana</li>
+            <li>grapes</li>
+            <li>apple</li>
+            <li>mango</li>
+        </ul>
+    </section>
+
+    <section >
+        <h1 id="place">Favourite Destination</h1>
+        <ul>
+            <li>Sundarban</li>
+            <li>Coxsbazar</li>
+            <li>Rangamati</li>
+            <li>Bandarban</li>
+        </ul>
+    </section>
+
+    <section >
+        <h1 id="subject">Favourite Subject</h1>
+        <ul>
+            <li class="impt-subj">Math</li>
+            <li class="impt-subj">H.Math</li>
+            <li class="impt-subj">Chemsitry</li>
+            <li>Physics</li>
+        </ul>
+    </section>
+    
+</body>
+<script src="Dom.js"></script>
+<script>
+    const licollection = document.getElementsByTagName('li')
+    // console.log(licollection)
+    for(const item of licollection){
+        // console.log(item)
+        console.log(item.innerText)
+    }
+
+
+    const subjects = document.getElementsByClassName('li')
+    // console.log(licollection)
+    for(const subject of subjects){
+        // console.log(item)
+        console.log(subject.innerText)
+        console.log(subject)
+    }
+
+
+    const fruits = document.querySelectorAll('#fruits')
+    // console.log(licollection)
+    for(const fruit of fruits){
+        // console.log(item)
+        console.log(fruit.innerText)
+        console.log(fruit)
+    }
+</script>
+</html>
