@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dom Events er Khela</h1>
+    <!-- option 1 for event handler -->
+    <button onclick="console.log(7)">check</button>
+    <button onclick="console.log('hello dude')">check too</button>
+    <input type="text">
+
+
+
+    <br>
+
+    <!-- option 2 -->
+     <!-- using function -->
+    <button onclick="makeyellow()">Make yellow</button>
+    <button onclick="makegreen()">Make green</button>
+    
+    <!-- using id -->
+    <button id="btn-blue" onclick="">Make blue</button>
+
+
+    <button id="btn-purple" onclick="">Make purple</button>
+</body>
+<script>
+    // 1
+    function makeyellow(){
+        document.body.style.backgroundColor = 'yellow'
+    }
+
+    function makegreen(){
+        document.body.style.backgroundColor = 'green'
+    }
+
+    // 2
+    const btnMakeBlue = document.getElementById("btn-blue");
+    btnMakeBlue.onclick = function makeblue(){
+        document.body.style.backgroundColor = 'blue';
+    }
+
+
+    const btnMakepurple = document.getElementById("btn-purple");
+    btnMakepurple.onclick = makepurple;
+    function makepurple(){
+        document.body.style.backgroundColor = 'purple';
+    }
+</script>
+<script src="events_js.js"></script>
+</html>
