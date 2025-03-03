@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- changing a page title using event handler -->
+    <h1 id="page-title">Event handler</h1>
+    <button id="btn-update-title">update title</button>
+
+
+    <p id="user-info">No User</p>
+    <button id="btn-login">Login</button>
+
+
+
+    <br>
+    <br>
+    <br>
+    <!-- handle input text -->
+    <p id="name">no name</p>
+     <input id="input-name" placeholder="enter  your name" type="text">
+     <button id="btn-update">update</button>
+
+    <script>
+        document.getElementById('btn-update-title').addEventListener('click',function(){
+            const pageTitleElement = document.getElementById('page-title');
+            console.log(pageTitleElement);
+            pageTitleElement.innerText = 'I am a good boy'
+
+        })
+
+
+
+        document.getElementById('btn-login').addEventListener('click', function(){
+            const userInfoEl = document.getElementById('user-info');
+            userInfoEl.innerText = 'user logged in successfully'
+        })
+
+        document.getElementById('btn-update').addEventListener('click',
+            function(){
+                // console.log(5)
+                // get the text from the input field
+                const inputName = document.getElementById('input-name');
+                name = inputName.value;
+                console.log(name)
+
+                // set the name
+                const nameP= document.getElementById('name')
+
+                nameP.innerText = name;
+
+            }
+        )
+
+
+
+    </script>
+</body>
+</html>

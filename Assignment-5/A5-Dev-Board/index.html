@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="min-h-screen mx-auto bg-[#F4F7FF]">
+        <header class="pt-2">
+            <!-- navbar part -->
+            <div class="navbar bg-base-100 shadow-sm rounded-2xl items-center justify-center">
+                <div class="flex-1 flex">
+                    <img class="w-12" src="./assets/logo.png" alt="">
+                    <a class="btn btn-ghost text-xl pb-1"><p>Dev<span class="font-bold">Board</span></p> </a>
+                </div>
+                <div class="flex gap-4">
+                  <div class="mt-7">
+                    <div class="relative">
+                      <div class="bg-[#F4F7FF] w-24 h-12 rounded-full absolute -top-7 right-2">
+                          <input type="checkbox" checked="checked" class="checkbox top-2 left-4 checkbox-primary" />
+                          <h4 class="text-2xl absolute left-12 top-2">23</h4>
+                      </div>
+                  </div>
+                  </div>
+                  <div>
+                    <div class="relative bg-[#F4F7FF] w-12 h-12 rounded-full">
+                      <img class="absolute left-2 top-1 pt-1 w-8" src="./assets/theme-btn.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </header>
+        <section class="mt-3 flex max-w-[1280px]">
+            <div class="bg-[#FFFFFF] min-h-screen p-3 mr-4">
+                <div class="flex justify-between gap-3">
+
+
+                    <!-- Task Assigned -->
+                    <div class="bg-[#F4F7FF] ml-3 w-xs flex justify-center text-center items-center gap-3 rounded-md">
+                        <div class="relative">
+                            <div class="bg-[#FFFFFF] w-12 h-12 rounded-full absolute -top-7 right-2">
+                                <input type="checkbox" checked="checked" class="checkbox top-2 checkbox-primary" />
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <p>Task Assigned</p>
+                                <h4 id="task_num" class="font-bold text-start">6</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Discover Something New Today! -->
+                    <div class="bg-gradient-to-tr from-[#3752FD] to-[#9BA8F8] rounded-xl p-3 flex w-[480px]">
+                        <img src="./assets/board.png" alt="">
+                        <h2 class="text-xl text-white mt-5">Discover Something New Today!</h2>
+                    </div>
+
+                    <!-- Calender -->
+                    <div class="bg-[#F4F7FF] w-xs flex justify-center text-center items-center gap-3 rounded-md w-md">
+                        <div class="relative">
+                            <div class="bg-[#FFFFFF] w-12 h-12 rounded-full absolute -top-7 right-2">
+                                 <img class="ml-2 mt-2" src="./assets/calender.png" alt="">
+                            </div>
+                        </div>
+                        <div id="date"></div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                <!-- Cards section-->
+                 <section class="mt-3 grid grid-cols-3 space-y-5 place-items-center min-w-80%">
+                    <!-- card one -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-20 rounded-sm">
+                                <h3>Shop Ease</h3>
+                            </div>
+                          <h2 class="card-title">Fix Mobile Button Issue</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <button id="card-btn" class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <!-- cards two -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-20 rounded-sm">
+                                <h3>Soft Pay</h3>
+                            </div>
+                          <h2 class="card-title">Add Pay Success Modal</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>25 March 2025</h3>
+                            </div>
+                            <button class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- cards three -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-13 rounded-sm">
+                                <h3>Meta</h3>
+                            </div>
+                          <h2 class="card-title">Add new reaction &#x1F932;</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>31 March 2025</h3>
+                            </div>
+                            <button class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- cards four -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-35 rounded-sm">
+                                <h3>Programming Hero</h3>
+                            </div>
+                          <h2 class="card-title">Fix Video Loading Issue</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>21 March 2025</h3>
+                            </div>
+                            <button class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- cards five -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-23 rounded-sm">
+                                <h3>Google LLC</h3>
+                            </div>
+                          <h2 class="card-title">Integrate AI search</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>01 April 2025</h3>
+                            </div>
+                            <button class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- cards six -->
+                    <div class="card bg-[#F4F7FF] w-[370px] shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-white p-2 w-25 rounded-sm">
+                                <h3>Polygon Tech</h3>
+                            </div>
+                          <h2 class="card-title">Review Ami Probashi Site</h2>
+                          <div class="bg-white p-4 rounded-sm">
+                              <p>A card component has a figure, a body <br> part, and inside body  there are title and <br> actions parts</p>
+                          </div>
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <h3>05 May 2025</h3>
+                            </div>
+                            <button class="btn btn-primary mt-1">Completed</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                </section>
+            </div>
+
+            <!-- sideline div -->
+             <section class="bg-white mr-3 ">
+              <div class="flex gap-5 pr-11 pl-11 pt-11 pb-2">
+                <img src="./assets/activity.png" alt="">
+                <h3>Activity Log</h3>
+              </div>
+              <div class="flex justify-center">
+                <button class="btn btn-primary">Clear History</button>
+              </div>
+              <hr class="mt-2 ">
+
+
+                
+
+
+                <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laborum veritatis velit nostrum ratione aperiam tempora excepturi, iusto modi earum at quae, consequatur minus repellat nemo repellendus, adipisci sit! Voluptatum.</h1> -->
+             </section>
+        </section>
+
+
+    </section>
+    <!-- date -->
+     <script src="./script/scripts.js"></script>
+    
+</body>
+</html>

@@ -21,11 +21,18 @@
     <button onclick="makeyellow()">Make yellow</button>
     <button onclick="makegreen()">Make green</button>
     
+    <!-- option-3 -->
     <!-- using id -->
     <button id="btn-blue" onclick="">Make blue</button>
 
-
     <button id="btn-purple" onclick="">Make purple</button>
+
+
+    <!-- option-4 : add eventlistener -->
+    <button id="btn-make-violet">Make violet</button>
+    <button id="btn-make-gold">Make gold</button>
+
+
 </body>
 <script>
     // 1
@@ -49,6 +56,20 @@
     function makepurple(){
         document.body.style.backgroundColor = 'purple';
     }
+
+
+    // 4
+    document.getElementById('btn-make-violet').addEventListener('click', 
+    function makeviolet(){
+        document.body.style.backgroundColor = 'violet';
+    })
+
+
+    document.getElementById('btn-make-gold').addEventListener('click',
+        function makegold(){
+            document.body.style.backgroundColor = 'gold';
+        }
+    )
 </script>
 <script src="events_js.js"></script>
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .comment{
+            border-radius: 5px;
+            background-color: aqua;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comment your important messages</h1>
+
+    <div id="cmnt-container">
+        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores possimus doloremque qui, repellendus explicabo dicta distinctio nobis ipsam modi eligendi.</p>
+        <p class="comment">Ipsum corporis aspernatur facere deserunt doloremque repellendus ullam vero id cum, dignissimos quisquam dolor! Et corporis dignissimos inventore reprehenderit modi.</p>
+        <p class="comment">Enim, at optio! Sed incidunt, alias explicabo odio, assumenda nihil facilis esse, veniam quod ipsum debitis sunt! Praesentium, quisquam aliquid.</p>
+    </div>
+    
+
+
+    <!-- make a random generate comment box using html ans js -->
+     <textarea name="" id="text-input" cols="60" rows="5"></textarea>
+     <br>
+     <button id="cmnt-btn">comment</button>
+
+
+
+     <script>
+        document.getElementById('cmnt-btn').addEventListener('click',
+            function(){
+                // step-1
+                const textbox = document.getElementById('text-input');
+                // console.log(textbox)
+                const new_cmnt = textbox.value
+                // console.log(new_cmnt);
+
+                // step-2
+                const cmnt_container = document.getElementById('cmnt-container')
+                // console.log(cmnt_container);
+
+                // step-3
+
+                const cmnt_element = document.createElement('p')
+                cmnt_element.classList.add('comment')
+                cmnt_element.innerText = new_cmnt
+
+                // console.log(new_cmnt)
+                
+                // step-4
+                cmnt_container.appendChild(cmnt_element)
+
+                // step-5
+                textbox.value = ''
+
+            }
+        )
+     </script>
+</body>
+</html>
