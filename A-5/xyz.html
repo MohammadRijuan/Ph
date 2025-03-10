@@ -3,43 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .notify{
-            background-color: #F4F7FF;
-            border-radius: 5px;
-            padding: 5px;
-            margin-top: 5px;
-
-        }
-    </style>
-    <!-- daisy ui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>Blogs</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
 </head>
-<body id="body-color" class="bg-gray-100">
-    <header class="mx-auto">
-        <!-- navbar -->
-        <nav class="flex justify-between bg-white shadow-md p-4 m-4 rounded">
-            <div class="flex items-center justify-center gap-2">
-                <img src="./assets/logo.png" alt="">
-                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
-            </div>
-
-            <div class="flex items-center justify-center gap-8">
-                <div class="flex gap-4 bg-gray-100 px-2 rounded-3xl">
-                    <input type="checkbox">
-                    <h5 id="cnt" class="font-bold text-2xl">23</h5>
-                </div>
-                <img id="color-btn" src="./assets/theme-btn.png" alt="">
-            </div>
-        </nav>
-
-        
-        <!-- card section -->
-        <section class="grid bg-white mt-4 p-4 m-4 rounded">
-            <!-- Task, Discover, and Date Section -->
-
+<body class="bg-[#F4F7FF] poppins-font">
+    <!-- Card Section -->
+    <section class="bg-white mt-4 p-4 m-4 rounded">
+        <!-- Task, Discover, and Date Section -->
         <div class="grid grid-cols-4 gap-4">
             <!-- Task Assigned -->
             <div class="flex items-center bg-gray-100 p-4 justify-center gap-4">
@@ -57,7 +31,7 @@
             </div>
 
             <!-- Date Section -->
-            <div class="flex mb-0 items-center bg-gray-100 p-4 justify-center gap-4">
+            <div class="flex border mb-0 items-center bg-gray-100 p-4 justify-center gap-4">
                 <img src="./assets/calender.png" alt="">
                 <h4 id="date">Wed, July 28 2025</h4>
             </div>
@@ -152,36 +126,25 @@
                 </div>
             </div>
 
-            <!-- activity part -->
-            <div class="items-center row-span-3 text-center justify-center">
+            <!-- Activity Log Section -->
+            <div class="bg-gray-100 p-4 rounded-lg">
                 <div class="flex justify-center pb-4">
                     <img src="./assets/activity.png" alt="">
                     <h4>Activity History</h4>
                 </div>
                 <Button id="clear" class="btn btn-primary mb-4">Clear History</Button>
 
-                <hr>
-                <!-- notification part -->
-                <p id="text-info-1"></p>
-                <p id="text-info-2"></p>
-                <p id="text-info-3"></p>
-                <p id="text-info-4"></p>
-                <p id="text-info-5"></p>
-                <p id="text-info-6"></p>
+                <hr class="dashed-line">
 
+                <!-- Notification Section -->
+                <div id="text-info" class="mt-4">
+                    <!-- Notifications will be dynamically added here -->
+                </div>
             </div>
         </div>
-            
-        </section>
-    </header>
+    </section>
 
-
-    <!-- script file here -->
-    <script src="script_file/alert.js"></script>
-    <script src="script_file/color.js"></script>
-    <script src="script_file/count.js"></script>
-    <script src="script_file/date.js"></script>
-    <script src="script_file/blog.js"></script>
-    <script src="script_file/notification.js"></script>
+    <!-- Script Files -->
+    <script src="./script/back.js"></script>
 </body>
 </html>

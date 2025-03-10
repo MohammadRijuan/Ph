@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="body-color" class="bg-gray-100">
+    <header class="mx-auto">
+        <!-- navbar -->
+        <nav class="flex justify-between bg-white shadow-md p-4 m-4 rounded">
+            <div class="flex items-center justify-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+
+            <div class="flex items-center justify-center gap-8">
+                <button id="back-btn" class="btn btn-primary">Back</button>
+            </div>
+        </nav>
+
+
+        <!-- content -->
+         <h1 class="font-bold text-3xl text-center">Blogs</h1>
+
+         <div class="mx-4 bg-white p-6 rounded mt-4">
+            <h3 class="font-bold">Question-1:  What are the different ways to select an element in the DOM?</h3>
+            <br>
+            <hr>
+            <p>Selecting Elements in the DOM With Javascript
+                <br>
+                document. getElementById()
+                <br>
+                document. getElementsByClassName()
+                <br>
+                document. getElementsByTagName()
+                <br>
+                document. querySelector() 
+                <br>
+                 document. querySelectorAll()</p>
+         </div>
+
+         <div class="mx-4 bg-white p-6 rounded mt-4">
+            <h3 class="font-bold">Question-2:  What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <br>
+            <hr>
+            <p>"innerHTML" - retrieves the complete HTML markup within an element, including tags
+                <br>
+                "innerText" - only returns the visible text content of an element, ignoring HTML tags
+                <br>
+                "textContent" - returns all text content within an element, including hidden text, but without considering HTML formatting
+            </p>
+         </div>
+
+
+         <div class="mx-4 bg-white p-6 rounded mt-4">
+            <h3 class="font-bold">Question-3:  What is event delegation in the DOM?</h3>
+            <br>
+            <hr>
+            <p>Event delegation is a kind of js technique where we can attach single event listener to a parent element....What helps us to reduce the number of event listeners..</p>
+         </div>
+
+
+         <div class="mx-4 bg-white p-6 rounded mt-4">
+            <h3 class="font-bold">Question-4:  What is event bubbling in the DOM?</h3>
+            <br>
+            <hr>
+            <p>Event bubbling is a mechanism what allows parent elements to respond to events triggered by their child elements.</p>
+         </div>
+
+         <div class="mx-4 bg-white p-6 rounded mt-4">
+            <h3 class="font-bold">Question-5:  How do you create, add, and remove elements using JavaScript??</h3>
+            <br>
+            <hr>
+            <p class="pl-3 pr-3 pb-3">createElement--- <br>
+                Let new = document.createElement(“div”);
+                <br> 
+                new.innerText = “Hello, programming hero!”;
+                <br><br>
+                appendChild & prepend--- <br>
+                document.body.appendChild(new); 
+                <br>
+                document.body.prepend(new);     
+                <br><br>
+                remove---
+                <br>
+                hide something or delete something
+                <br>
+                new.remove();
+                </p>
+         </div>
+
+
+
+
+
+    <script src="script_file/blog.js"></script>
+    <script src="script_file/back.js"></script>
+</body>
+</html>
