@@ -1,0 +1,62 @@
+[
+  {
+    "id": 2,
+    "name": "Whispers of the Forest",
+    "description": "A mystical tale set in an ancient forest, where secrets and spirits reside in the shadows.",
+    "coverPhoto": "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    "authorName": "Nathaniel Reed",
+    "authorImage": "https://images.unsplash.com/photo-1502767089025-6572583495b0",
+    "status": "Draft",
+    "readingTime": 6
+  },
+  {
+    "id": 3,
+    "name": "Digital Dreams",
+    "description": "A deep dive into the future of technology and the human psyche in a hyper-connected world.",
+    "coverPhoto": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+    "authorName": "Sophie Lin",
+    "authorImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "status": "Archived",
+    "readingTime": 7
+  },
+  {
+    "id": 6,
+    "name": "Canvas of Memories",
+    "description": "An emotional journey through an artist’s life as she paints her past and heals old wounds.",
+    "coverPhoto": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
+    "authorName": "Iris Chen",
+    "authorImage": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+    "status": "Draft",
+    "readingTime": 5
+  },
+  {
+    "id": 7,
+    "name": "Echoes in the Dark",
+    "description": "A gripping psychological thriller where a detective must confront his own demons to solve a chilling mystery.",
+    "coverPhoto": "https://images.unsplash.com/photo-1526817341555-8052f682b5a7",
+    "authorName": "James Holloway",
+    "authorImage": "https://images.unsplash.com/photo-1502767089025-6572583495b0",
+    "status": "Published",
+    "readingTime": 5
+  },
+  {
+    "id": 8,
+    "name": "Windswept",
+    "description": "A romantic tale of two strangers brought together by fate and a series of windswept letters.",
+    "coverPhoto": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+    "authorName": "Amara Fields",
+    "authorImage": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    "status": "Published",
+    "readingTime": 3
+  },
+  {
+    "id": 9,
+    "name": "Ironheart Protocol",
+    "description": "In a future ruled by AI, one rebel soldier must awaken humanity’s last hope.",
+    "coverPhoto": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "authorName": "Dex Tran",
+    "authorImage": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    "status": "On Hold",
+    "readingTime": 4
+  }
+]

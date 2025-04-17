@@ -1,0 +1,13 @@
+.country{
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.country-visit{
+    background: aqua;
+}
+
+.btn-visited{
+    background-color: violet;
+}
